@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="50dp"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        android:textColor="#08f"
+        android:text="BMI Calculator"
+        android:gravity="center_horizontal"/>
+
+
+    <LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginRight="50dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="50dp">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Mass"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textStyle="italic"
+        android:paddingLeft="20dp"
+        android:inputType="numberDecimal"
+        android:hint="body mass in Kg"
+        android:id="@+id/massTxt"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginRight="50dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="50dp">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Height"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textStyle="italic"
+        android:paddingLeft="20dp"
+        android:inputType="numberDecimal"
+        android:hint="height in meter"
+        android:id="@+id/heightTxt"/>
+
+</LinearLayout>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="calculate"
+        android:layout_marginTop="50dp"
+        android:onClick="calculate"
+        android:layout_marginHorizontal="30dp"/>
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:textStyle="italic"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:hint="Your result is not yet ready ..."
+        android:id="@+id/resultTxt"/>
+
+</LinearLayout>
